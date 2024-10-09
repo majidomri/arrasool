@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto - Tailwind Template</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+  </head>
+
+  <body class="bg-gray-100"
+    x-data="{ page: 'home', 'loaded': true, 'modalNewsletter': false, 'modalSearch': false, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+    <section class="pt-3 pb-10">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <nav class="flex items-center justify-between">
+          <h1 class="text-green-800 uppercase text-xl tracking-wide font-bold">IQRAISLAM.NET</h1>
+
+        </nav>
+      </div>
+    </section>
+    <section class="mx-20 text-sm">
+      <div class="flex justify-start items-center sm:ml-20 ml-15">
+        <nav class="">
+          <ol class="list-none p-0 inline-flex space-x-3">
+            <li class="flex items-center">
+              <svg onclick="window.location.href='/';" xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 576 512" class="cursor-pointer hover:fill-blue-500 transition-colors duration-300"
+                fill="#4b5563">
+                <path
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+              </svg>
+            </li>
+            <li class="flex items-center">
+              <a href="#" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">Tools</a>
+              <span class="mx-3"> <i data-feather="chevron-right" class="w-5 h-5"></i></span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-gray-800">Current Article</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <section class="mx-auto px-10 lg:ml-32">
+      <h1 href="#" class="text-gray-900 font-bold text-3xl pt-3">Portrait Photography In Early Days</h1>
+      <div class="py-5 text-sm font-regular text-gray-900 flex">
+        <span class="mr-3 flex flex-row items-center">
+          <svg class="text-indigo-600" fill="currentColor" height="13px" width="13px" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+           c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+              </g>
+            </g>
+          </svg>
+          <span class="ml-1">6 mins read</span>
+        </span>
+
+        <a href="javascript:void(0)" class="flex flex-row items-center hover:text-indigo-600  mr-3">
+          <svg class="text-indigo-600" fill="currentColor" height="16px" aria-hidden="true" role="img" focusable="false"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+            </path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <span class="ml-1">AliSher Azimi</span></a>
+
+        <a href="javascript:void(0)" class="flex flex-row items-center hover:text-indigo-600">
+          <svg class="text-indigo-600" fill="currentColor" height="16px" aria-hidden="true" role="img" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path fill=""
+              d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z">
+            </path>
+          </svg>
+          <span class="ml-1">activewear</span></a>
+      </div>
+    </section>
+
+
+    <section class="py-3">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <main class="">
+          <div class="bg-white px-8 py-10 rounded-md">
+            <article class="text-justify">
+              <h1 class="my-3 text-gray-900 font-medium text-xl mb-5">What is the Quran?<h1>
+                  <p class="font-normal text-gray-900 leading-1 mb-8">The Quran is
+                    the final guidance from the Lord of all worlds.
+                    Revealed to Prophet Muhammad (PBUH) through angel Gabriel,
+                    confirming all previous divine books. This is the Book about
+                    which
+                    there is no doubt, a guidance for those conscious of One True God (Allah). It
+                    is
+                    for those who believe in the unseen, establish prayer, and spend
+                    from what Allah has provided. Believers accept what has been
+                    revealed to Muhammad and previous prophets and have certainty in
+                    the Hereafter. They are based upon right guidance and are
+                    successful. For those who disbelieve, whether warned or not,
+                    they
+                    will not believe. Allah has set a seal upon their hearts,
+                    hearing,
+                    and vision, and for them is a great punishment.</p>
+                  <h2 class="my-3 text-gray-900 font-medium text-xl mb-5">What is the subject of the Quran? </h2>
+                  <p class="font-normal text-gray-900 leading-1 mb-8"> The subject of the Quran is Humans. It explains
+                    what leads to
+                    human success and well-being and what does not. It discusses the
+                    reality of the universe, its beginning, end, and system. It
+                    tells who the Creator, Owner, Organizer, and Regulator of the
+                    universe is, what His attributes are, and the reality upon which
+                    this entire system is biosed. It explains the status and
+                    position of humans in this world and the correct path of thought
+                    and action for them. This book provides a comprehensive code of
+                    life for every aspect of human existence. It explains the
+                    consequences of following the right path and the results of
+                    treading the wrong paths in this world and the hereafter. It
+                    tells that this world is temporary, a test for humans and jinn (devil),
+                    and the real place is the hereafter where the righteous will
+                    receive Paradise and its eternal blessings, with a life that has
+                    no end. It also states that Hell is for the wretched, where they
+                    will dwell forever, never dying, and it is a very bad abode.</p>
+                  <h2 class="my-3 text-gray-900 font-medium text-xl mb-5">What is its example?</h2>
+                  <p class="font-normal text-gray-900 leading-1 mb-8">The relationship of this book to humans is like
+                    that of students
+                    in an exam hall with their question papers; human actions are
+                    the answer sheet, recorded and rewarded on the Day of Judgment
+                    with utmost fairness. Alternatively, imagine a boat lost in the
+                    sea without contact, where systems have failed and provisions
+                    are exhausted, with no shore in sight and surrounded by the
+                    threat of death. In their desperation, the sight of a bird
+                    brings immense relief and hope, prompting them to follow it,
+                    hoping it leads to safety. Similarly, the Quran relates to
+                    humans when they find their life's resources depleted and the
+                    world, despite its vastness, becomes constricting. Amidst
+                    tyranny and chaos, as humanity faces its end, the Quran stands
+                    as the protector of life, wealth, honor, and lineage, instilling
+                    peace and tranquility. The Quran guides to a steadfast path,
+                    free from deviations and fluctuations. It speaks of people until
+                    the Day of Judgment, including you. Have you sought to discover
+                    what it mentions about you? If one ignores or denies the Quran
+                    and discourages others, who could be more unjust?<br>
+                    This is the only book in the world that has deeply and
+                    universally impacted human thoughts, morals, civilization, and
+                    lifestyle to an unparalleled extent. Its influence first changed
+                    a nation, and then that nation sparked a revolution in minds
+                    from Spain to Malaysia.<br>
+                    In light of these truths, the Quran in the second verse of the
+                    second Surah of the first part says about this book, &quot;This
+                    is the Book about which there is no doubt.&quot; This verse aims
+                    to make humans understand that while all other books discussing
+                    metaphysics and truths beyond perception are based on
+                    conjecture, this is a book entirely based on knowledge and
+                    truth. Since its author is the knower of all truths, there is
+                    absolutely no room for doubt in it!<br>
+                    </h2>
+                  <div class="flex justify-left gap-2 flex-wrap p-4">
+                    <span
+                      class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#photography</span>
+                    <span class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#travel</span>
+                    <span class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#winter</span>
+                    <span class="bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600">#chill</span>
+                  </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </section>
+    <section class="pt-1">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-3">
+
+          <a href=""
+            class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-indigo-600 bg-white rounded-md  sm:w-auto sm:mb-0"
+            data-primary="green-400" data-rounded="rounded-2xl" data-primary-reset="{}">
+            Previous Article
+            <i data-feather="arrow-right" class="text-white"></i>
+            <p class="font-normal text-gray-500 text-md"> Next Title</p>
+          </a>
+          <a href=""
+            class="inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-lg text-indigo-600 bg-white rounded-md  sm:w-auto sm:mb-0"
+            data-primary="green-400" data-rounded="rounded-2xl" data-primary-reset="{}">
+            Next Article
+            <i data-feather="arrow-right" class="text-white"></i>
+            <p class="font-normal text-gray-500 text-md"> Next Title</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <section class="container max-w-screen-xl mx-auto px-4 py-15">
+      <div class="">
+        <h3
+          class="block antialiased tracking-normal font-sans text-3xl font-semibold leading-snug text-blue-gray-900 my-6">
+          Trending Blogs</h3>
+      </div>
+      <div class="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none">
+          <div
+            class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-sm mx-0 mt-0 mb-6 h-52">
+            <img alt="Hydrogen-Powered Vehicles" loading="lazy" width="768" height="768" decoding="async" data-nimg="1"
+              class="h-full w-full object-cover" src="/nextjs-tailwind-author-page/image/blogs/blog-1.png"
+              style="color: transparent;">
+          </div>
+          <div class="p-0"><a href="#" class="text-blue-gray-900 transition-colors hover:text-gray-800">
+              <h5
+                class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-inherit mb-2">
+                Hydrogen-Powered Vehicles</h5>
+            </a>
+            <p
+              class="block antialiased font-sans text-base leading-relaxed text-inherit mb-3 font-normal !text-gray-500">
+              This article delves into the cutting-edge technology behind hydrogen fuel cells and their environmental
+              benefits.</p><button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-gray-900 hover:bg-gray-900/10 active:bg-gray-900/20 flex items-center gap-2"
+              type="button">read more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-3.5 w-3.5 text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none">
+          <div
+            class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-sm mx-0 mt-0 mb-6 h-52">
+            <img alt="Mental Health in the Digital Age" loading="lazy" width="768" height="768" decoding="async"
+              data-nimg="1" class="h-full w-full object-cover" src="/nextjs-tailwind-author-page/image/blogs/blog-2.png"
+              style="color: transparent;">
+          </div>
+          <div class="p-0"><a href="#" class="text-blue-gray-900 transition-colors hover:text-gray-800">
+              <h5
+                class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-inherit mb-2">
+                Mental Health in the Digital Age</h5>
+            </a>
+            <p
+              class="block antialiased font-sans text-base leading-relaxed text-inherit mb-3 font-normal !text-gray-500">
+              This article explores the intricate relationship between social media usage and mental health</p><button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-gray-900 hover:bg-gray-900/10 active:bg-gray-900/20 flex items-center gap-2"
+              type="button">read more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-3.5 w-3.5 text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none">
+          <div
+            class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-sm mx-0 mt-0 mb-6 h-52">
+            <img alt="Mars Colonization and Beyond" loading="lazy" width="768" height="768" decoding="async"
+              data-nimg="1" class="h-full w-full object-cover" src="/nextjs-tailwind-author-page/image/blogs/blog-3.png"
+              style="color: transparent;">
+          </div>
+          <div class="p-0"><a href="#" class="text-blue-gray-900 transition-colors hover:text-gray-800">
+              <h5
+                class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-inherit mb-2">
+                Mars Colonization and Beyond</h5>
+            </a>
+            <p
+              class="block antialiased font-sans text-base leading-relaxed text-inherit mb-3 font-normal !text-gray-500">
+              This article takes readers on a journey through the latest developments in space exploration.</p><button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-gray-900 hover:bg-gray-900/10 active:bg-gray-900/20 flex items-center gap-2"
+              type="button">read more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-3.5 w-3.5 text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg></button>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-transparent text-gray-700 shadow-none">
+          <div
+            class="relative bg-clip-border rounded-xl overflow-hidden bg-white text-gray-700 shadow-sm mx-0 mt-0 mb-6 h-52">
+            <img alt="Mars Colonization and Beyond" loading="lazy" width="768" height="768" decoding="async"
+              data-nimg="1" class="h-full w-full object-cover" src="/nextjs-tailwind-author-page/image/blogs/blog-3.png"
+              style="color: transparent;">
+          </div>
+          <div class="p-0"><a href="#" class="text-blue-gray-900 transition-colors hover:text-gray-800">
+              <h5
+                class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-inherit mb-2">
+                Mars Colonization and Beyond</h5>
+            </a>
+            <p
+              class="block antialiased font-sans text-base leading-relaxed text-inherit mb-3 font-normal !text-gray-500">
+              This article takes readers on a journey through the latest developments in space exploration.</p><button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-gray-900 hover:bg-gray-900/10 active:bg-gray-900/20 flex items-center gap-2"
+              type="button">read more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-3.5 w-3.5 text-gray-900">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+              </svg></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div x-show="loaded"
+      x-init="window.addEventListener('DOMContentLoaded', () => {setTimeout(() => loaded = false, 500)})"
+      class="fixed left-0 top-0 z-999999 flex h-screen w-screen items-center justify-center bg-white"
+      style="display: none;">
+      <div class="h-16 w-16 animate-spin rounded-full border-4 border-solid border-primary border-t-transparent">
+      </div>
+    </div>
+    <footer class="pb-9 px-8">
+      <div class="container mx-auto">
+        <div class="grid items-center justify-center gap-3">
+          <ul class="flex flex-wrap justify-center gap-8 items-center">
+            <li><a href="#"
+                class="block antialiased font-sans text-base leading-relaxed text-inherit py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900 px-2">Privacy</a>
+            </li>
+            <li><a href="#"
+                class="block antialiased font-sans text-base leading-relaxed text-inherit py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900 px-2">Terms
+              </a></li>
+            <li><a href="#"
+                class="block antialiased font-sans text-base leading-relaxed text-inherit py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900 px-2">Contact</a>
+            </li>
+            <li><a href="#"
+                class="block antialiased font-sans text-base leading-relaxed text-inherit py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900 px-2">Donate</a>
+            </li>
+          </ul>
+          <p
+            class="block antialiased font-sans text-base leading-relaxed text-inherit text-center font-normal !text-gray-700">
+            © 2024 IqraIslam. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <button
+      class="hidden items-center justify-center w-10 h-10 rounded-[4px] shadow-solid-5 bg-black hover:opacity-95 fixed bottom-8 right-8 z-999"
+      @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+      @scroll.window="scrollTop = (window.pageYOffset &gt; 50) ? true : false" :class="{ '!flex' : scrollTop }">
+      <svg class="fill-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z">
+        </path>
+      </svg>
+    </button>
+    <script>
+      feather.replace()
+    </script>
+  </body>
+  </section>
+
+</html>
